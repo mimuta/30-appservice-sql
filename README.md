@@ -23,4 +23,18 @@ See [LICENSE](LICENSE.md).
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-\$env:ConnectionStrings:MyDbConnection="Server=tcp:sqs-weu-sqlserver001-int01.database.windows.net,1433;Initial Catalog=SDB-APPSERVICE00-INT01;Persist Security Info=False;User ID=srv_appservice;Password=;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+\$env:ConnectionStrings:MyDbConnection="Server=tcp:sqs-weu-sqlserver001-int01.database.windows.net,1433;Initial Catalog=SDB-APPSERVICE00-INT01;Persist Security Info=False;User ID=srv_appservice;Password=password04!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+
+# my environment
+
+# PowerShell
+
+\$env:ConnectionStrings:MyDbConnection="Server=tcp:impl-sql-test.database.windows.net,1433;Initial Catalog=impl-test;Persist Security Info=False;User ID=srv_admin;Password=SLR13mm2005;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+
+# Run migrations
+
+dotnet ef database update
+
+# Implenia
+
+Server=tcp:sqs-weu-sqlserver001-int01.database.windows.net,1433;Initial Catalog=SDB-APPSERVICE00-INT01;Persist Security Info=False;User ID=srv_appservice;Password=password04!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
